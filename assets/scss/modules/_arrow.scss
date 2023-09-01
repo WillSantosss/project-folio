@@ -1,0 +1,63 @@
+@import "../globals/config";
+
+
+.arrow {
+  $self: #{&};
+
+  &__container {
+    display: flex;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+
+    span {
+      width: 20px;
+      position: relative;
+      transition: 0.5s;
+      transform: scale(0.6);
+
+      #arrow-icon-one {
+        animation: color_anim 1.5s infinite 0.2s;
+      }
+    
+      #arrow-icon-three {
+        animation: color_anim 1.5s infinite 0.6s;
+      }
+    
+      #arrow-icon-two {
+        animation: color_anim 1.5s infinite 0.4s;
+      }
+
+    }
+
+  
+
+
+  } //Content arrow
+
+
+// SVG animations 
+
+@keyframes color_anim {
+  0% {
+    fill: $white;
+  }
+
+  50% {
+    fill: $white-soft;
+  }
+
+  100% {
+    fill: $white;
+  }
+}
+
+} // Conteudo geral ARROW
+
+  
+
+
+

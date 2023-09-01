@@ -1,5 +1,14 @@
-@import "globals/config";
+//Global configuration
+@import "./globals/config";
+
+body {
+  background-color: #dbdbdbdb;
+}
+
+.container-page-arrow {
+  margin:  0 30px;
+}
 
 
 //Modules
-@import "./modules/teste";
+@import "./modules/arrow";

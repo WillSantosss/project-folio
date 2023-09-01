@@ -47,30 +47,94 @@ table {
   border-spacing: 0;
 }
 
-h1 {
-  color: #808080;
-  font-size: 16px;
-  font-size: var(--type-text-regular-fs-px, 16px);
-  font-size: var(--type-text-regular-fs-rem, 1rem);
-  line-height: 24px;
-  line-height: var(--type-text-regular-lh-px, 24px);
-  line-height: var(--type-text-regular-lh-rem, 1.5rem);
-  font-weight: 700;
-  font-family: "Inter", sans-serif;
-  font-size: 1em;
+body {
+  background-color: rgba(219, 219, 219, 0.8588235294);
 }
 
-.button {
-  color: red;
+.container-page-arrow {
+  margin: 0 30px;
 }
-.button p {
-  color: blue;
-  font-size: 16px;
-  font-size: var(--type-text-regular-fs-px, 16px);
-  font-size: var(--type-text-regular-fs-rem, 1rem);
-  line-height: 24px;
-  line-height: var(--type-text-regular-lh-px, 24px);
-  line-height: var(--type-text-regular-lh-rem, 1.5rem);
-  font-weight: 700;
-  font-family: "Inter", sans-serif;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.arrow__container {
+  display: flex;
+}
+.arrow__content {
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg);
+}
+.arrow__content span {
+  width: 20px;
+  position: relative;
+  transition: 0.5s;
+  transform: scale(0.6);
+}
+.arrow__content span #arrow-icon-one {
+  animation: color_anim 1.5s infinite 0.2s;
+}
+.arrow__content span #arrow-icon-three {
+  animation: color_anim 1.5s infinite 0.6s;
+}
+.arrow__content span #arrow-icon-two {
+  animation: color_anim 1.5s infinite 0.4s;
+}
+@keyframes color_anim {
+  0% {
+    fill: #ffffff;
+  }
+  50% {
+    fill: rgba(253, 253, 253, 0.5019607843);
+  }
+  100% {
+    fill: #ffffff;
+  }
 }/*# sourceMappingURL=main.css.map */
