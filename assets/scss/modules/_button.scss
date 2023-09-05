@@ -1,0 +1,39 @@
+@import "../globals/config";
+
+.buttons {
+  display: flex;
+}
+
+.button {
+  $self: #{&};
+
+  display: flex;
+  align-items: center;
+
+  &__content {
+    width: 6.625rem;
+    background: $secondary-light;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    @include type("title-xs");
+    color: $white;
+    font-weight: 600;
+    text-align: center;
+    &:hover {
+      background: $white;
+      color: $primary;
+    }
+  }
+
+  &--transparent {
+    #{$self} {
+      &__content {
+        background: transparent;
+        &:hover {
+          background: $white;
+        }
+      }
+    }
+  }
+}

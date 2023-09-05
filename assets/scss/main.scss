@@ -5,10 +5,11 @@ body {
   background-color: #dbdbdbdb;
 }
 
-.container-page-arrow {
-  margin:  0 30px;
+.container-page-elements {
+  margin: 30px 30px;
 }
 
 
 //Modules
 @import "./modules/arrow";
+@import "./modules/button";
