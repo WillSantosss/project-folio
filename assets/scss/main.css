@@ -52,7 +52,7 @@ body {
 }
 
 .container-page-elements {
-  margin: 30px 30px;
+  padding: 30px 30px;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -113,10 +113,15 @@ table {
   transform: rotate(90deg);
 }
 .arrow__content span {
-  width: 20px;
+  width: 100%;
   position: relative;
   transition: 0.5s;
   transform: scale(0.6);
+}
+@media screen and (max-width: 759px) {
+  .arrow__content span {
+    transform: scale(0.4);
+  }
 }
 .arrow__content span #arrow-icon-one {
   animation: color_anim 1.5s infinite 0.2s;
@@ -195,6 +200,7 @@ table {
 .button {
   display: flex;
   align-items: center;
+  margin-right: 10px;
 }
 .button__content {
   width: 6.625rem;
@@ -223,4 +229,167 @@ table {
 }
 .button--transparent .button__content:hover {
   background: #fcfcfc;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.rectangle {
+  padding-top: 30px;
+  width: 28.125rem;
+  height: 35.625rem;
+}
+@media screen and (max-width: 759px) {
+  .rectangle {
+    width: 16.3125rem;
+    height: 20.625rem;
+  }
+}
+.rectangle__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.625rem;
+  background: linear-gradient(180deg, #6b51bd 0%, #7f7585 100%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+}
+.rectangle__titles {
+  display: flex;
+  justify-content: center;
+  padding-top: 3.15rem;
+  gap: 1.69rem;
+}
+.rectangle__titles p {
+  font-size: 12px;
+  font-size: var(--type-text-small-fs-px, 12px);
+  font-size: var(--type-text-small-fs-rem, 0.75rem);
+  line-height: 22px;
+  line-height: var(--type-text-small-lh-px, 22px);
+  line-height: var(--type-text-small-lh-rem, 1.375rem);
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  color: #fcfcfc;
+}
+@media screen and (max-width: 759px) {
+  .rectangle__titles {
+    padding-top: 1.5rem;
+    gap: 0.9rem;
+  }
+  .rectangle__titles p {
+    font-weight: 400;
+  }
+}
+.rectangle--two .rectangle__content {
+  background: linear-gradient(148deg, #001c42 -4.9%, #9c6def 103.63%);
+}
+.rectangle--three .rectangle__content {
+  background: linear-gradient(180deg, #9c6def 0%, #002c69 100%);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.rectangle-home__arrow {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 26.3rem;
+}
+@media screen and (max-width: 759px) {
+  .rectangle-home__arrow {
+    top: 13.81rem;
+  }
 }/*# sourceMappingURL=main.css.map */

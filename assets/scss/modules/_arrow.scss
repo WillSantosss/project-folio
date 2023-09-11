@@ -1,6 +1,5 @@
 @import "../globals/config";
 
-
 .arrow {
   $self: #{&};
 
@@ -14,47 +13,42 @@
     transform: rotate(90deg);
 
     span {
-      width: 20px;
+      width: 100%;
       position: relative;
       transition: 0.5s;
       transform: scale(0.6);
 
+      @include d(s) {
+        transform: scale(0.4);
+      }
+
       #arrow-icon-one {
         animation: color_anim 1.5s infinite 0.2s;
       }
-    
+
       #arrow-icon-three {
         animation: color_anim 1.5s infinite 0.6s;
       }
-    
+
       #arrow-icon-two {
         animation: color_anim 1.5s infinite 0.4s;
       }
-
     }
-
   } //Content arrow
 
+  // SVG animations
 
-// SVG animations 
+  @keyframes color_anim {
+    0% {
+      fill: $white;
+    }
 
-@keyframes color_anim {
-  0% {
-    fill: $white;
+    50% {
+      fill: $white-soft;
+    }
+
+    100% {
+      fill: $white;
+    }
   }
-
-  50% {
-    fill: $white-soft;
-  }
-
-  100% {
-    fill: $white;
-  }
-}
-
 } // Conteudo geral ARROW
-
-  
-
-
-

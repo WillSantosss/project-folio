@@ -1,0 +1,15 @@
+@import "../globals/config";
+
+.rectangle-home {
+  $self: #{&};
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 26.3rem;
+
+    @include d(s) {
+      top: 13.81rem;
+    }
+  }
+}
