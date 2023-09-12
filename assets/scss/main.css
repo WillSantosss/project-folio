@@ -383,53 +383,47 @@ table {
   border-spacing: 0;
 }
 
-.rectangle-home__arrow {
+.rectangle-home-one__arrow {
   display: flex;
   justify-content: center;
   position: relative;
   top: 26.3rem;
 }
 @media screen and (max-width: 759px) {
-  .rectangle-home__arrow {
-    top: 13.81rem;
+  .rectangle-home-one__arrow {
+    top: 14.81rem;
   }
 }
-
-.ogr-card-small__container {
+.rectangle-home-one__card-container {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 0 24px 0px 31px;
-}
-.ogr-card-small__thumbnail {
-  width: 60%;
-  height: auto;
-}
-.ogr-card-small__thumbnail picture {
-  padding-bottom: 152%;
   position: relative;
-  overflow: hidden;
-  display: block;
-  height: 0;
-  width: 100%;
+  padding: 0 1.5rem 0 1.938rem;
 }
-.ogr-card-small__img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 5px;
+@media screen and (max-width: 759px) {
+  .rectangle-home-one__card-container {
+    padding: 0 1.12rem 0 1.12rem;
+    bottom: 1rem;
+  }
 }
-.ogr-card-small__content {
-  width: 55%;
+.rectangle-home-one__card-content {
+  width: 65%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding-right: 18px;
-  padding-top: 15px;
+  gap: 0.938rem;
+  padding-right: 1.125rem;
+  padding-top: 25px;
 }
-.ogr-card-small__title {
+@media screen and (max-width: 759px) {
+  .rectangle-home-one__card-content {
+    width: 60%;
+    gap: 0.31rem;
+    padding-right: 0.42rem;
+    padding-top: 0;
+  }
+}
+.rectangle-home-one__card-content h2 {
   font-size: 16px;
   font-size: var(--type-text-regular-fs-px, 16px);
   font-size: var(--type-text-regular-fs-rem, 1rem);
@@ -440,11 +434,17 @@ table {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   color: #fcfcfc;
+  line-height: normal;
 }
-.ogr-card-small__title span {
+.rectangle-home-one__card-content h2 span {
   color: #002C69;
 }
-.ogr-card-small__text {
+@media screen and (max-width: 759px) {
+  .rectangle-home-one__card-content h2 {
+    font-size: 0.875rem;
+  }
+}
+.rectangle-home-one__card-content p {
   font-size: 12px;
   font-size: var(--type-text-small-fs-px, 12px);
   font-size: var(--type-text-small-fs-rem, 0.75rem);
@@ -454,14 +454,23 @@ table {
   font-weight: 400;
   font-family: "Inter", sans-serif;
   color: #fcfcfc;
+  line-height: normal;
 }
-.ogr-card-small .button {
+@media screen and (max-width: 759px) {
+  .rectangle-home-one__card-content p {
+    font-size: 0.625rem;
+  }
+}
+.rectangle-home-one__card-button {
+  display: flex;
   justify-content: center;
   margin: 0;
 }
-.ogr-card-small .button__content {
+.rectangle-home-one__card-button button {
   width: 8.625rem;
   height: 2.53rem;
+  display: flex;
+  align-items: center;
   font-size: 16px;
   font-size: var(--type-text-regular-fs-px, 16px);
   font-size: var(--type-text-regular-fs-rem, 1rem);
@@ -470,8 +479,46 @@ table {
   line-height: var(--type-text-regular-lh-rem, 1.375rem);
   font-weight: 400;
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   padding: 0.65rem 1rem;
+}
+@media screen and (max-width: 759px) {
+  .rectangle-home-one__card-button button {
+    width: 7rem;
+    height: 1.437rem;
+    font-size: 0.75rem;
+    padding: 0.19rem 0.63rem;
+  }
+}
+.rectangle-home-one__card-thumbnail {
+  width: 60%;
+  height: auto;
+}
+.rectangle-home-one__card-thumbnail picture {
+  padding-bottom: 152%;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  height: 0;
+  width: 100%;
+}
+@media screen and (max-width: 759px) {
+  .rectangle-home-one__card-thumbnail picture {
+    padding-bottom: 141%;
+  }
+}
+.rectangle-home-one__card-thumbnail picture img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+@media screen and (max-width: 759px) {
+  .rectangle-home-one__card-thumbnail {
+    width: 70%;
+  }
 }
 
 .icons__content {
@@ -479,4 +526,19 @@ table {
   justify-content: center;
   padding-top: 1.66rem;
   gap: 1.5rem;
+  position: relative;
+}
+@media screen and (max-width: 759px) {
+  .icons__content {
+    justify-content: end;
+    padding-top: 0;
+    gap: 0.91rem;
+    bottom: 3.5rem;
+    right: 1.5rem;
+  }
+}
+@media screen and (max-width: 759px) {
+  .icons__content img {
+    width: 13px;
+  }
 }/*# sourceMappingURL=main.css.map */
