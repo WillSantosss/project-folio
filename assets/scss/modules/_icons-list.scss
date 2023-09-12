@@ -1,0 +1,8 @@
+.icons {
+  $self: #{&};
+
+  &__content {
+    display: flex;
+    width: auto;
+  }
+}

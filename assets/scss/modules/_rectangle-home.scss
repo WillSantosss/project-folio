@@ -113,12 +113,8 @@
       width: 70%;
     }
   }
-}
 
-.icons {
-  $self: #{&};
-
-  &__content {
+  &__card-icons {
     display: flex;
     justify-content: center;
     padding-top: 1.66rem;
@@ -129,7 +125,7 @@
       padding-top: 0;
       gap: 0.91rem;
       bottom: 3.5rem;
-      right: 1.5rem;
+      padding-right: 1.5rem;
     }
 
     img {

@@ -520,8 +520,7 @@ table {
     width: 70%;
   }
 }
-
-.icons__content {
+.rectangle-home-one__card-icons {
   display: flex;
   justify-content: center;
   padding-top: 1.66rem;
@@ -529,16 +528,21 @@ table {
   position: relative;
 }
 @media screen and (max-width: 759px) {
-  .icons__content {
+  .rectangle-home-one__card-icons {
     justify-content: end;
     padding-top: 0;
     gap: 0.91rem;
     bottom: 3.5rem;
-    right: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 @media screen and (max-width: 759px) {
-  .icons__content img {
+  .rectangle-home-one__card-icons img {
     width: 13px;
   }
+}
+
+.icons__content {
+  display: flex;
+  width: auto;
 }/*# sourceMappingURL=main.css.map */
