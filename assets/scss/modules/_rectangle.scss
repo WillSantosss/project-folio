@@ -27,6 +27,7 @@
     gap: 1.69rem;
     p {
       @include type("text-small");
+      font-weight: 500;
       color: $white;
     }
 

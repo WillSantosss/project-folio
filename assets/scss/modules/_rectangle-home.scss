@@ -13,3 +13,83 @@
     }
   }
 }
+
+.ogr-card-small {
+  $self: #{&};
+
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 24px 0px 31px;
+  }
+
+  &__thumbnail {
+    width: 55%;
+    height: auto;
+
+    picture {
+      padding-bottom: 152%;
+      position: relative;
+      overflow: hidden;
+      display: block;
+      height: 0;
+      width: 100%;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  &__content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 18px;
+    padding-top: 15px;
+  }
+
+  &__title {
+    @include type("text-regular");
+    font-weight: 700;
+    color: $white;
+    span {
+      color: $secondary-light;
+    }
+  }
+
+  &__text {
+    @include type("text-small");
+    color: $white;
+  }
+
+  .button {
+    justify-content: center;
+    margin: 0;
+  }
+
+  .button__content {
+    width: 8.625rem;
+    height: 2.53rem;
+    @include type("text-regular");
+    font-size: 14px;
+    padding: 0.65rem 1rem;
+  }
+}
+
+.icons {
+  $self: #{&};
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.66rem;
+    gap: 1.5rem;
+  }
+}

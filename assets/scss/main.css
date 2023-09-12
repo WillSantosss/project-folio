@@ -313,8 +313,9 @@ table {
   line-height: 22px;
   line-height: var(--type-text-small-lh-px, 22px);
   line-height: var(--type-text-small-lh-rem, 1.375rem);
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Inter", sans-serif;
+  font-weight: 500;
   color: #fcfcfc;
 }
 @media screen and (max-width: 759px) {
@@ -392,4 +393,90 @@ table {
   .rectangle-home__arrow {
     top: 13.81rem;
   }
+}
+
+.ogr-card-small__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 24px 0px 31px;
+}
+.ogr-card-small__thumbnail {
+  width: 55%;
+  height: auto;
+}
+.ogr-card-small__thumbnail picture {
+  padding-bottom: 152%;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  height: 0;
+  width: 100%;
+}
+.ogr-card-small__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.ogr-card-small__content {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-right: 18px;
+  padding-top: 15px;
+}
+.ogr-card-small__title {
+  font-size: 16px;
+  font-size: var(--type-text-regular-fs-px, 16px);
+  font-size: var(--type-text-regular-fs-rem, 1rem);
+  line-height: 22px;
+  line-height: var(--type-text-regular-lh-px, 22px);
+  line-height: var(--type-text-regular-lh-rem, 1.375rem);
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #fcfcfc;
+}
+.ogr-card-small__title span {
+  color: #002C69;
+}
+.ogr-card-small__text {
+  font-size: 12px;
+  font-size: var(--type-text-small-fs-px, 12px);
+  font-size: var(--type-text-small-fs-rem, 0.75rem);
+  line-height: 22px;
+  line-height: var(--type-text-small-lh-px, 22px);
+  line-height: var(--type-text-small-lh-rem, 1.375rem);
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  color: #fcfcfc;
+}
+.ogr-card-small .button {
+  justify-content: center;
+  margin: 0;
+}
+.ogr-card-small .button__content {
+  width: 8.625rem;
+  height: 2.53rem;
+  font-size: 16px;
+  font-size: var(--type-text-regular-fs-px, 16px);
+  font-size: var(--type-text-regular-fs-rem, 1rem);
+  line-height: 22px;
+  line-height: var(--type-text-regular-lh-px, 22px);
+  line-height: var(--type-text-regular-lh-rem, 1.375rem);
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  padding: 0.65rem 1rem;
+}
+
+.icons__content {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.66rem;
+  gap: 1.5rem;
 }/*# sourceMappingURL=main.css.map */
