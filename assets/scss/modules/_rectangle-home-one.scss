@@ -1,5 +1,3 @@
-@import "../globals/config";
-
 .rectangle-home-one {
   $self: #{&};
   &__arrow {
@@ -64,24 +62,9 @@
   }
 
   &__card-button {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-
-    button {
-      width: 8.625rem;
-      height: 2.53rem;
-      display: flex;
-      align-items: center;
-      @include type("text-regular");
-      font-size: 0.875rem;
-      padding: 0.65rem 1rem;
-      @include d(s) {
-        width: 7rem;
-        height: 1.437rem;
-        font-size: 0.75rem;
-        padding: 0.19rem 0.63rem;
-      }
+    margin-left: 0.625rem;
+    @include d(s) {
+      margin-left: 0;
     }
   }
 
