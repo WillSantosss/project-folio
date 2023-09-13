@@ -39,6 +39,11 @@
   }
 
   &--two {
+    height: 34.625rem;
+    @include d(s) {
+      width: 16.3125rem;
+      height: 20.625rem;
+    }
     #{$self} {
       &__content {
         background: linear-gradient(148deg, #001c42 -4.9%, #9c6def 103.63%);
@@ -47,6 +52,11 @@
   }
 
   &--three {
+    height: 34.625rem;
+    @include d(s) {
+      width: 16.3125rem;
+      height: 20.625rem;
+    }
     #{$self} {
       &__content {
         background: linear-gradient(180deg, #9c6def 0%, #002c69 100%);

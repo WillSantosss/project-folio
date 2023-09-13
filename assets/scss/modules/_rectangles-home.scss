@@ -1,0 +1,21 @@
+.rectangles-home {
+  $self: #{&};
+  display: flex;
+  justify-content: center;
+
+  &__one {
+    z-index: 2;
+  }
+
+  &__two {
+    position: relative;
+    top: 0.6rem;
+    right: 11rem;
+  }
+
+  &__three {
+    position: relative;
+    top: 0.6rem;
+    left: 11rem;
+  }
+}

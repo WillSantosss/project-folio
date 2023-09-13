@@ -220,8 +220,26 @@ body {
     font-weight: 400;
   }
 }
+.rectangle--two {
+  height: 34.625rem;
+}
+@media screen and (max-width: 759px) {
+  .rectangle--two {
+    width: 16.3125rem;
+    height: 20.625rem;
+  }
+}
 .rectangle--two .rectangle__content {
   background: linear-gradient(148deg, #001c42 -4.9%, #9c6def 103.63%);
+}
+.rectangle--three {
+  height: 34.625rem;
+}
+@media screen and (max-width: 759px) {
+  .rectangle--three {
+    width: 16.3125rem;
+    height: 20.625rem;
+  }
 }
 .rectangle--three .rectangle__content {
   background: linear-gradient(180deg, #9c6def 0%, #002c69 100%);
@@ -503,7 +521,7 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 0.8rem;
+  top: 0.4rem;
 }
 @media screen and (max-width: 759px) {
   .rectangle-home-two__arrow {
@@ -649,6 +667,24 @@ body {
   .rectangle-home-three__arrow {
     top: 0rem;
   }
+}
+
+.rectangles-home {
+  display: flex;
+  justify-content: center;
+}
+.rectangles-home__one {
+  z-index: 2;
+}
+.rectangles-home__two {
+  position: relative;
+  top: 0.6rem;
+  right: 11rem;
+}
+.rectangles-home__three {
+  position: relative;
+  top: 0.6rem;
+  left: 11rem;
 }
 
 .icons__content {
