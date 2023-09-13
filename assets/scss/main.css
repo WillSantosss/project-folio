@@ -227,16 +227,9 @@ body {
   background: linear-gradient(180deg, #9c6def 0%, #002c69 100%);
 }
 
-.rectangle-home-one__arrow {
-  display: flex;
-  justify-content: center;
+.rectangle-home-one__card {
   position: relative;
-  top: 26.3rem;
-}
-@media screen and (max-width: 759px) {
-  .rectangle-home-one__arrow {
-    top: 14.81rem;
-  }
+  top: 2.5rem;
 }
 .rectangle-home-one__card-container {
   display: flex;
@@ -362,6 +355,17 @@ body {
 @media screen and (max-width: 759px) {
   .rectangle-home-one__card-icons img {
     width: 13px;
+  }
+}
+.rectangle-home-one__arrow {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 5rem;
+}
+@media screen and (max-width: 759px) {
+  .rectangle-home-one__arrow {
+    top: 1rem;
   }
 }
 

@@ -1,14 +1,9 @@
 .rectangle-home-one {
   $self: #{&};
-  &__arrow {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 26.3rem;
 
-    @include d(s) {
-      top: 14.81rem;
-    }
+  &__card {
+    position: relative;
+    top: 2.5rem;
   }
 
   &__card-container {
@@ -115,6 +110,17 @@
       @include d(s) {
         width: 13px;
       }
+    }
+  }
+
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5rem;
+
+    @include d(s) {
+      top: 1rem;
     }
   }
 }
