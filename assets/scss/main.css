@@ -121,6 +121,7 @@ body {
   color: #fcfcfc;
   font-weight: 600;
   text-align: center;
+  cursor: pointer;
 }
 .button__content:hover {
   background: #fcfcfc;
@@ -690,4 +691,72 @@ body {
 .icons__content {
   display: flex;
   width: auto;
+}
+
+.page-home {
+  display: flex;
+}
+.page-home__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vw;
+  background-color: rgba(107, 81, 189, 0.1490196078);
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="978" viewBox="0 0 1440 978" fill="none"><path d="M0 0H1439.76V681.5C1439.76 681.5 1538.95 618.109 1241 797.5C943.049 976.891 723 811.5 436.5 811.5C150 811.5 0 977.846 0 977.846V0Z" fill="url(%23paint0_linear_446_2297)"/><defs><linearGradient id="paint0_linear_446_2297" x1="1398" y1="318.5" x2="-0.000193373" y2="890.5" gradientUnits="userSpaceOnUse"><stop stop-color="%23CEC5E8"/><stop offset="0.352319" stop-color="%239C6DEF"/><stop offset="0.597535" stop-color="%23845FD6"/><stop offset="0.84304" stop-color="%236B51BD"/><stop offset="1" stop-color="%236B51BD"/></linearGradient></defs></svg>'); /* Substitua 'seu-arquivo.svg' pelo caminho para o seu SVG */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: start start;
+}
+.page-home__text {
+  width: 46.3125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.19rem;
+}
+.page-home__text h1 {
+  font-size: 48px;
+  font-size: var(--type-title-l-fs-px, 48px);
+  font-size: var(--type-title-l-fs-rem, 3rem);
+  line-height: 22px;
+  line-height: var(--type-title-l-lh-px, 22px);
+  line-height: var(--type-title-l-lh-rem, 1.375rem);
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  color: #fcfcfc;
+  line-height: normal;
+  text-align: center;
+}
+.page-home__text h2 {
+  font-size: 24px;
+  font-size: var(--type-title-md-fs-px, 24px);
+  font-size: var(--type-title-md-fs-rem, 1.5rem);
+  line-height: 22px;
+  line-height: var(--type-title-md-lh-px, 22px);
+  line-height: var(--type-title-md-lh-rem, 1.375rem);
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #fcfcfc;
+  line-height: normal;
+  text-align: center;
+  padding-bottom: 3.13rem;
+}
+.page-home__text-button {
+  padding-bottom: 4.14rem;
+}
+.page-home__text-button__content {
+  width: 17.3125rem;
+  height: 3.5rem;
+  font-size: 24px;
+  font-size: var(--type-title-md-fs-px, 24px);
+  font-size: var(--type-title-md-fs-rem, 1.5rem);
+  line-height: 22px;
+  line-height: var(--type-title-md-lh-px, 22px);
+  line-height: var(--type-title-md-lh-rem, 1.375rem);
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=main.css.map */

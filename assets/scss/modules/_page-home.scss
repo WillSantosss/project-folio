@@ -1,0 +1,52 @@
+.page-home {
+  $self: #{&};
+  display: flex;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vw;
+    background-color: $primary-opacity;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="978" viewBox="0 0 1440 978" fill="none"><path d="M0 0H1439.76V681.5C1439.76 681.5 1538.95 618.109 1241 797.5C943.049 976.891 723 811.5 436.5 811.5C150 811.5 0 977.846 0 977.846V0Z" fill="url(%23paint0_linear_446_2297)"/><defs><linearGradient id="paint0_linear_446_2297" x1="1398" y1="318.5" x2="-0.000193373" y2="890.5" gradientUnits="userSpaceOnUse"><stop stop-color="%23CEC5E8"/><stop offset="0.352319" stop-color="%239C6DEF"/><stop offset="0.597535" stop-color="%23845FD6"/><stop offset="0.84304" stop-color="%236B51BD"/><stop offset="1" stop-color="%236B51BD"/></linearGradient></defs></svg>'); /* Substitua 'seu-arquivo.svg' pelo caminho para o seu SVG */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: start start;
+  }
+
+  &__text {
+    width: 46.3125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.19rem;
+    h1 {
+      @include type("title-l");
+      color: $white;
+      line-height: normal;
+      text-align: center;
+    }
+
+    h2 {
+      @include type("title-md");
+      font-weight: 300;
+      color: $white;
+      line-height: normal;
+      text-align: center;
+      padding-bottom: 3.13rem;
+    }
+
+    &-button {
+      padding-bottom: 4.14rem;
+    }
+
+    &-button__content {
+      width: 17.3125rem;
+      height: 3.5rem;
+      @include type("title-md");
+    }
+  }
+}
