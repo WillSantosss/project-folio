@@ -7,10 +7,9 @@
 
   display: flex;
   align-items: center;
-  margin-right: 10px;
 
   &__content {
-    width: 6.625rem;
+    width: 100%;
     background: $secondary-light;
     padding: 0.75rem 1rem;
     border: none;
@@ -20,6 +19,11 @@
     font-weight: 600;
     text-align: center;
     cursor: pointer;
+    transition: 0.1s ease-in-out;
+    @include d(s) {
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+    }
     &:hover {
       background: $white;
       color: $primary;

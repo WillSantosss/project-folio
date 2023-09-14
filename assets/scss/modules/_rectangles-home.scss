@@ -1,7 +1,11 @@
 .rectangles-home {
   $self: #{&};
-  display: flex;
-  justify-content: center;
+  max-width: 100vw;
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
   &__one {
     z-index: 2;

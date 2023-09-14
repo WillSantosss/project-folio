@@ -5,15 +5,68 @@
   &__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100vw;
     background-color: $primary-opacity;
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="978" viewBox="0 0 1440 978" fill="none"><path d="M0 0H1439.76V681.5C1439.76 681.5 1538.95 618.109 1241 797.5C943.049 976.891 723 811.5 436.5 811.5C150 811.5 0 977.846 0 977.846V0Z" fill="url(%23paint0_linear_446_2297)"/><defs><linearGradient id="paint0_linear_446_2297" x1="1398" y1="318.5" x2="-0.000193373" y2="890.5" gradientUnits="userSpaceOnUse"><stop stop-color="%23CEC5E8"/><stop offset="0.352319" stop-color="%239C6DEF"/><stop offset="0.597535" stop-color="%23845FD6"/><stop offset="0.84304" stop-color="%236B51BD"/><stop offset="1" stop-color="%236B51BD"/></linearGradient></defs></svg>'); /* Substitua 'seu-arquivo.svg' pelo caminho para o seu SVG */
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: start start;
+
+    //Responsive Exclusive background
+    @media screen and (min-width: 481px) and (max-width: 759px) {
+      width: 100vh;
+      height: 100vh;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="864" height="678" viewBox="0 0 864 678" fill="none"><path d="M0 0H863V236.263V472.525C863 472.525 869.064 428.572 700.807 552.955C532.551 677.338 408.287 562.662 246.497 562.662C84.7068 562.662 0 678 0 678V0Z" fill="url(%23paint0_linear_667_1855)"/><defs><linearGradient id="paint0_linear_667_1855" x1="789.467" y1="220.835" x2="-40.0473" y2="497.262" gradientUnits="userSpaceOnUse"><stop stop-color="%23CEC5E8"/><stop offset="0.352319" stop-color="%239C6DEF"/><stop offset="0.597535" stop-color="%23845FD6"/><stop offset="0.84304" stop-color="%236B51BD"/><stop offset="1" stop-color="%236B51BD"/></linearGradient></defs></svg>') !important ;
+    }
+    @media screen and (max-width: 480px) {
+      width: 100vh;
+      height: 100vh;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="499" height="681" viewBox="0 0 499 681" fill="none"><path d="M0 0H498.853V237.308V474.616C498.853 474.616 506.651 430.469 408.56 555.402C310.469 680.335 238.025 565.152 143.704 565.152C49.3827 565.152 0 681 0 681V0Z" fill="url(%23paint0_linear_669_1856)"/><defs><linearGradient id="paint0_linear_669_1856" x1="460.247" y1="221.812" x2="-57.6738" y2="321.988" gradientUnits="userSpaceOnUse"><stop stop-color="%23CEC5E8"/><stop offset="0.352319" stop-color="%239C6DEF"/><stop offset="0.597535" stop-color="%23845FD6"/><stop offset="0.84304" stop-color="%236B51BD"/><stop offset="1" stop-color="%236B51BD"/></linearGradient></defs></svg>');
+    }
+  }
+
+  &__nav-button {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding-right: 10rem;
+    padding-top: 2.69rem;
+    @include d(s) {
+      gap: 0.88rem;
+      padding-right: 1.5rem;
+      padding-top: 1.5rem;
+      padding-bottom: 2.69rem;
+    }
+
+    button {
+      @include d(s) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5.9375rem;
+        height: 2.1875rem;
+        padding: 0.75rem 1rem;
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0;
+    @include d(m) {
+      transform: scale(0.75);
+      padding: 0rem;
+    }
+    @include d(s) {
+      width: auto;
+      padding: 0 1.5rem 0 1.5rem;
+    }
   }
 
   &__text {
@@ -23,11 +76,19 @@
     justify-content: center;
     align-items: center;
     gap: 1.19rem;
+    @include d(s) {
+      width: 100%;
+      gap: 0.63rem;
+    }
     h1 {
       @include type("title-l");
       color: $white;
       line-height: normal;
       text-align: center;
+      @include d(s) {
+        text-align: start;
+        font-size: 1.75rem;
+      }
     }
 
     h2 {
@@ -37,16 +98,38 @@
       line-height: normal;
       text-align: center;
       padding-bottom: 3.13rem;
+      @include d(s) {
+        font-size: 1rem;
+        text-align: start;
+        padding-bottom: 2.5rem;
+      }
     }
 
     &-button {
       padding-bottom: 4.14rem;
+      @include d(s) {
+        width: 100%;
+        padding-bottom: 1.31rem;
+      }
     }
 
     &-button__content {
       width: 17.3125rem;
       height: 3.5rem;
       @include type("title-md");
+
+      @include d(s) {
+        font-size: 1rem;
+        width: 100%;
+        height: auto;
+        padding: 0.5rem 1.5rem;
+      }
+    }
+  }
+
+  &__cards {
+    @include d(s) {
+      display: none;
     }
   }
 }
