@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
 
-  &__content {
+  button {
     width: 100%;
     background: $secondary-light;
     padding: 0.75rem 1rem;
@@ -31,12 +31,10 @@
   }
 
   &--transparent {
-    #{$self} {
-      &__content {
-        background: transparent;
-        &:hover {
-          background: $white;
-        }
+    button {
+      background: transparent;
+      &:hover {
+        background: $white;
       }
     }
   }
