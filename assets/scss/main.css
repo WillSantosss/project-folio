@@ -1003,6 +1003,7 @@ body {
 .page-home-third__content-text {
   padding-left: 4.13rem;
   padding-top: 4.5rem;
+  padding-right: 1.5rem;
   grid-area: content-text;
 }
 .page-home-third__content-text h2 {
@@ -1035,13 +1036,15 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: normal;
   color: #001C42;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 .page-home-third__content-text ol {
   display: flex;
   flex-direction: column;
   counter-reset: section;
   padding-bottom: 3.5rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
   gap: 1.5rem;
 }
 .page-home-third__content-text ol li {
@@ -1106,6 +1109,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #001C42;
   font-weight: 700;
+  cursor: pointer;
   line-height: normal;
   text-decoration: underline;
   transition: background-image 0.3s ease;
@@ -1129,5 +1133,33 @@ body {
 }
 .page-home-third__content-photo {
   grid-area: content-photo;
-  background-image: url();
+}
+.page-home-third__content-photo__thumbnail {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 759px) {
+  .page-home-third__content-photo__thumbnail {
+    width: 100%;
+  }
+}
+.page-home-third__content-photo__thumbnail picture {
+  padding-bottom: 52.8125rem;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  height: 0;
+  width: 100%;
+}
+@media screen and (max-width: 759px) {
+  .page-home-third__content-photo__thumbnail picture {
+    padding-bottom: 100%;
+  }
+}
+.page-home-third__content-photo__thumbnail picture img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
