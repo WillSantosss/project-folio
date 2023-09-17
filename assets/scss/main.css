@@ -48,6 +48,20 @@ table {
   border-spacing: 0;
 }
 
+* ::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+* ::-webkit-scrollbar-thumb {
+  background-color: #002C69;
+  border-radius: 3px;
+}
+* ::-webkit-scrollbar-thumb:hover {
+  background-color: #001C42;
+}
+* ::-webkit-scrollbar-track {
+  background-color: #9C6DEF;
+}
+
 body {
   background-color: rgba(219, 219, 219, 0.8588235294);
 }
