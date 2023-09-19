@@ -27,12 +27,15 @@
 
   &__nav-button {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     text-align: center;
     gap: 1.5rem;
     padding-right: 10rem;
     padding-top: 2.69rem;
+    @include d(m) {
+      padding-right: 5rem;
+    }
     @include d(s) {
       gap: 0.88rem;
       padding-right: 1.5rem;
