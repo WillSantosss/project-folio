@@ -1,6 +1,6 @@
 export default function importPageHTML() {
   !function t() {
-    var e, n, i, o, r;
+    let e, n, i, o, r;
     for (e = document.getElementsByTagName("*"),
       n = 0; n < e.length; n++)
       if (o = (i = e[n]).getAttribute("include-html"))
