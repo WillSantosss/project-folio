@@ -16,12 +16,10 @@
 
     //Responsive Exclusive background
     @media screen and (min-width: 481px) and (max-width: 759px) {
-      height: 100vh;
       background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="864" height="678" viewBox="0 0 864 678" fill="none"><path d="M0 0H863V236.263V472.525C863 472.525 869.064 428.572 700.807 552.955C532.551 677.338 408.287 562.662 246.497 562.662C84.7068 562.662 0 678 0 678V0Z" fill="url(%23paint0_linear_667_1855)"/><defs><linearGradient id="paint0_linear_667_1855" x1="789.467" y1="220.835" x2="-40.0473" y2="497.262" gradientUnits="userSpaceOnUse"><stop stop-color="%23CEC5E8"/><stop offset="0.352319" stop-color="%239C6DEF"/><stop offset="0.597535" stop-color="%23845FD6"/><stop offset="0.84304" stop-color="%236B51BD"/><stop offset="1" stop-color="%236B51BD"/></linearGradient></defs></svg>') !important ;
     }
     @media screen and (max-width: 480px) {
-      height: 100vh;
-      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="499" height="681" viewBox="0 0 499 681" fill="none"><path d="M0 0H498.853V237.308V474.616C498.853 474.616 506.651 430.469 408.56 555.402C310.469 680.335 238.025 565.152 143.704 565.152C49.3827 565.152 0 681 0 681V0Z" fill="url(%23paint0_linear_669_1856)"/><defs><linearGradient id="paint0_linear_669_1856" x1="460.247" y1="221.812" x2="-57.6738" y2="321.988" gradientUnits="userSpaceOnUse"><stop stop-color="%23CEC5E8"/><stop offset="0.352319" stop-color="%239C6DEF"/><stop offset="0.597535" stop-color="%23845FD6"/><stop offset="0.84304" stop-color="%236B51BD"/><stop offset="1" stop-color="%236B51BD"/></linearGradient></defs></svg>');
+      background-image: url('data:image/svg+xml,<svg width="393" height="615" viewBox="0 0 393 615" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V615C40.2552 512.947 93 513 173.575 536.079C231.597 552.698 343 599 393 446V0H0Z" fill="url(%23paint0_linear_901_2722)"/><defs><linearGradient id="paint0_linear_901_2722" x1="381.401" y1="316.164" x2="-33.9046" y2="356.249" gradientUnits="userSpaceOnUse"><stop stop-color="%23CEC5E8"/><stop offset="0.484375" stop-color="%239C6DEF"/><stop offset="0.692708" stop-color="%23845FD6"/><stop offset="0.864583" stop-color="%236B51BD"/><stop offset="1" stop-color="%236B51BD"/></linearGradient></defs></svg>');
     }
   }
 
@@ -81,7 +79,7 @@
     gap: 1.19rem;
     @include d(s) {
       width: 100%;
-      gap: 0.63rem;
+      gap: 0.62rem;
     }
     h1 {
       @include type("title-l");
@@ -104,7 +102,7 @@
       @include d(s) {
         font-size: 1rem;
         text-align: start;
-        padding-bottom: 2.5rem;
+        padding-bottom: 1.88rem;
       }
     }
 
@@ -112,7 +110,7 @@
       padding-bottom: 4.14rem;
       @include d(s) {
         width: 100%;
-        padding-bottom: 2.31rem;
+        padding-bottom: 1.94rem;
       }
 
       button {
@@ -155,7 +153,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     @include d(s) {
-      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="393" height="234" viewBox="0 0 393 234" fill="none"><path d="M425 234L-48.7859 234L-48.7859 70.916C-48.7859 70.916 -81.4255 86.0856 16.6219 43.1571C114.669 0.228565 187.081 39.8069 281.36 39.8069C375.639 39.8069 425 4.57764e-05 425 4.57764e-05L425 234Z" fill="url(%23paint0_linear_446_2394)"/><defs><linearGradient id="paint0_linear_446_2394" x1="-35.0424" y1="157.783" x2="372.88" y2="-71.7326" gradientUnits="userSpaceOnUse"><stop stop-color="%23CEC5E8"/><stop offset="0.352319" stop-color="%239C6DEF"/><stop offset="0.597535" stop-color="%23845FD6"/><stop offset="0.84304" stop-color="%236B51BD"/><stop offset="1" stop-color="%236B51BD"/></linearGradient></defs></svg>');
+      background-image: url('data:image/svg+xml,<svg width="393" height="274" viewBox="0 0 393 274" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M393 273.5L393 0C352.745 38.8298 293.713 101.944 219.425 69.5286C110.5 22 50 52.2854 1.42499e-05 110.5L0 273.5L393 273.5Z" fill="url(%23paint0_linear_901_2723)"/><defs><linearGradient id="paint0_linear_901_2723" x1="11.5989" y1="153.204" x2="405.43" y2="53.2981" gradientUnits="userSpaceOnUse"><stop stop-color="%23CEC5E8"/><stop offset="0.484375" stop-color="%239C6DEF"/><stop offset="0.692708" stop-color="%23845FD6"/><stop offset="0.864583" stop-color="%236B51BD"/><stop offset="1" stop-color="%236B51BD"/></linearGradient></defs></svg>');
     }
   }
 
@@ -170,8 +168,11 @@
     }
     @include d(s) {
       flex-direction: column;
-      padding: 2rem 2rem 0 2rem;
-      gap: 0.63rem;
+      padding: 6rem 2rem 1rem 2rem;
+      gap: 0.42rem;
+    }
+    @media screen and (max-width: 320px) {
+      padding: 5rem 1rem 1rem 1rem;
     }
 
     h2 {
@@ -192,7 +193,7 @@
       gap: 1.5rem;
       @include d(s) {
         width: 100%;
-        gap: 0.88rem;
+        gap: 0.42rem;
         align-items: start;
       }
       p {
@@ -349,6 +350,9 @@
     display: flex;
     flex-direction: column;
     gap: 0.68rem;
+    @include d(s) {
+      flex-direction: column-reverse;
+    }
     a {
       display: flex;
       align-items: center;
@@ -433,6 +437,12 @@
   }
 }
 
+.swiper-home {
+  display: none;
+  @include d(s) {
+    display: block;
+  }
+}
 .swiper-container {
   display: none;
   @include d(s) {
