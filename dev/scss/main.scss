@@ -1,6 +1,6 @@
 //Global configuration
 
-@import "./globals/config";
+@import './globals/config';
 * {
   ::-webkit-scrollbar {
     width: 12px; /* Largura da barra de rolagem */
@@ -29,18 +29,23 @@ body {
   padding: 30px 30px;
 }
 
+.teste {
+  width: 500px;
+}
+
 //Modules
-@import "./modules/arrow";
-@import "./modules/button";
-@import "./modules/button-poly";
-@import "./modules/rectangle";
-@import "./modules/rectangle-home-one";
-@import "./modules/rectangle-home-two";
-@import "./modules/rectangle-home-three";
-@import "./modules/rectangles-home";
-@import "./modules/icons-list";
-@import "./modules/swiper-card";
+@import './modules/arrow';
+@import './modules/button';
+@import './modules/button-poly';
+@import './modules/rectangle';
+@import './modules/rectangle-home-one';
+@import './modules/rectangle-home-two';
+@import './modules/rectangle-home-three';
+@import './modules/rectangles-home';
+@import './modules/icons-list';
+@import './modules/swiper-card';
+@import './modules/paragraph-link.scss';
 
 //Pages
-@import "./modules/page-home";
-@import "./modules/footer";
+@import './modules/page-home';
+@import './modules/footer';
