@@ -1,5 +1,15 @@
-.parapraph-link {
+.paragraph-link {
+  display: flex;
+  gap: 8px;
+  align-items: center;
   p {
     @include type('text-regular');
+    color: $white;
+    a {
+      font-family: $mainfont;
+      font-size: 18px;
+      text-decoration: underline;
+      color: $secondary;
+    }
   }
 }
