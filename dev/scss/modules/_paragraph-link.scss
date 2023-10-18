@@ -1,15 +1,18 @@
 .paragraph-link {
   display: flex;
-  gap: 8px;
   align-items: center;
   p {
     @include type('text-regular');
     color: $white;
     a {
       font-family: $mainfont;
-      font-size: 18px;
+      font-size: 1rem;
+      margin-left: 0.5rem;
       text-decoration: underline;
       color: $secondary;
+      &:hover {
+        opacity: 0.9;
+      }
     }
   }
 }

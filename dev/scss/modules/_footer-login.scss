@@ -1,0 +1,12 @@
+.footer-login {
+  $self: #{&};
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &__text {
+    @include type('text-regular');
+    font-size: 0.75rem;
+    color: $white;
+  }
+}

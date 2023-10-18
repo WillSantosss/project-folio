@@ -1,0 +1,10 @@
+.link {
+  @include type('text-regular');
+  font-size: 0.75rem;
+  line-height: 0.9rem;
+  color: $secondary;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
