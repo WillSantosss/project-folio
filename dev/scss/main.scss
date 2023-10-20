@@ -29,6 +29,12 @@ body {
   padding: 30px 30px;
 }
 
+.teste {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
 //Modules
 @import './modules/arrow';
 @import './modules/button';

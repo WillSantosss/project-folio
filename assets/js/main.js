@@ -16,7 +16,7 @@
   \***********************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _import_page_html_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import-page-html.js */ \"./dev/js/import-page-html.js\");\n\n(0,_import_page_html_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack://portfacil/./dev/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _import_page_html_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./import-page-html.js */ \"./dev/js/import-page-html.js\");\n/* harmony import */ var _input_password_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./input-password.js */ \"./dev/js/input-password.js\");\n\n\n(0,_import_page_html_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n(0,_input_password_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack://portfacil/./dev/js/app.js?");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _imp
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ importPageHTML; }\n/* harmony export */ });\nfunction importPageHTML() {\n  !function t() {\n    var e, n, i, o, r;\n    for (e = document.getElementsByTagName(\"*\"), n = 0; n < e.length; n++) if (o = (i = e[n]).getAttribute(\"include-html\")) return (r = new XMLHttpRequest()).onreadystatechange = function () {\n      4 == this.readyState && (200 == this.status && (i.innerHTML = this.responseText), 404 == this.status && (i.innerHTML = \"Page not found.\"), i.removeAttribute(\"include-html\"), t());\n    }, r.open(\"GET\", o, !0), void r.send();\n  }();\n}\n\n//# sourceURL=webpack://portfacil/./dev/js/import-page-html.js?");
+
+/***/ }),
+
+/***/ "./dev/js/input-password.js":
+/*!**********************************!*\
+  !*** ./dev/js/input-password.js ***!
+  \**********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": function() { return /* binding */ inputPassword; }\n/* harmony export */ });\nfunction inputPassword() {\n  document.addEventListener('DOMContentLoaded', function () {\n    var passwordField = document.getElementById('senha');\n    var passwordToggle = document.getElementById('togglePassword');\n    var isPasswordVisible = false;\n    passwordToggle.addEventListener('click', function () {\n      isPasswordVisible = !isPasswordVisible;\n      passwordField.type = isPasswordVisible ? 'text' : 'password';\n      passwordToggle.src = isPasswordVisible ? '../../assets/images/icon-olho.svg' : '../../assets/images/icon-olhoAberto.svg';\n    });\n  });\n}\n\n//# sourceURL=webpack://portfacil/./dev/js/input-password.js?");
 
 /***/ })
 

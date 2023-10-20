@@ -1,4 +1,18 @@
-<form class="form-login" action="">
-  <input type="email" placeholder="Email" id="email">
+<form class="form-login">
   <label for="email"></label>
+  <input class="form-login__email" placeholder="E-mail" type="email" id="email" required> <span class="form-login__email-icon"> </span> </input>
+
+  <label for="senha"></label>
+  <div class="form-login__senha-content">
+    <input class="form-login__senha" placeholder="Senha" type="password" id="senha" required>
+    <img src="../../assets/images/icon-olho.svg" alt="Ícone do Olho" id="togglePassword" class="form-login__senha-icon">
+  </div>
+
+
+  <label for="senha"></label>
+  <input class="form-login__checkbox" type="checkbox" id="lembre" required> </input>
+
+  <div class="button">
+    <button>Login</button>
+  </div>
 </form>
