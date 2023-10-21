@@ -1,16 +1,20 @@
 <form class="form-login">
   <label for="email"></label>
-  <input class="form-login__email" placeholder="E-mail" type="email" id="email" required> <span class="form-login__email-icon"> </span> </input>
+  <input class="form-login__email" placeholder="E-mail" type="email" required> </input>
 
-  <label for="senha"></label>
-  <div class="form-login__senha-content">
-    <input class="form-login__senha" placeholder="Senha" type="password" id="senha" required>
-    <img src="../../assets/images/icon-olho.svg" alt="Ícone do Olho" id="togglePassword" class="form-login__senha-icon">
+  <div class="form-login__senha-div">
+    <label for="senha"></label>
+    <div class="form-login__senha-content">
+      <input class="form-login__senha" placeholder="Senha" type="password" id="senha" required>
+      <img src="../../assets/images/icon-olho.svg" alt="Ícone do Olho" id="togglePassword" class="form-login__senha-icon">
+    </div>
   </div>
 
 
-  <label for="senha"></label>
-  <input class="form-login__checkbox" type="checkbox" id="lembre" required> </input>
+  <div class="form-login__check">
+    <input class="form-login__check-input" type="checkbox" />
+    <label for="check-form">Lembre-se de mim</label>
+  </div>
 
   <div class="button">
     <button>Login</button>

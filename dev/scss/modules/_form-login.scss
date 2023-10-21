@@ -2,10 +2,13 @@
   display: flex;
   flex-direction: column;
 
+  $self: #{&};
+
   &__email,
   &__senha {
-    width: 32rem;
+    width: 29.75rem;
     height: 2.5rem;
+    @include type('text-regular');
     padding: 0.125rem 1rem;
     border: 2px solid $white;
     border-radius: 0.5rem;
@@ -19,6 +22,9 @@
 
     &:focus {
       outline: 2px solid $primary;
+      background: $primary;
+      color: $white;
+      @include type('text-regular');
     }
 
     //PlaceHolder
@@ -29,13 +35,12 @@
     }
   }
 
-  $self: #{&};
-
   &__email {
     margin-bottom: 1rem;
     background-image: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 5.75L12 14L3 5.75" stroke="%236B51BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 5.75H21V18.5C21 18.6989 20.921 18.8897 20.7803 19.0303C20.6397 19.171 20.4489 19.25 20.25 19.25H3.75C3.55109 19.25 3.36032 19.171 3.21967 19.0303C3.07902 18.8897 3 18.6989 3 18.5V5.75Z" stroke="%236B51BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.3594 12.5L3.23438 19.0344" stroke="%236B51BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.7656 19.0344L13.6406 12.5" stroke="%236B51BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
     background-repeat: no-repeat;
     background-position: 10px;
+    padding-left: 2.25rem;
 
     &:hover {
       background-image: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 5.75L12 14L3 5.75" stroke="%236B51BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 5.75H21V18.5C21 18.6989 20.921 18.8897 20.7803 19.0303C20.6397 19.171 20.4489 19.25 20.25 19.25H3.75C3.55109 19.25 3.36032 19.171 3.21967 19.0303C3.07902 18.8897 3 18.6989 3 18.5V5.75Z" stroke="%236B51BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.3594 12.5L3.23438 19.0344" stroke="%236B51BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.7656 19.0344L13.6406 12.5" stroke="%236B51BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
@@ -45,11 +50,15 @@
 
     &::placeholder {
       align-items: center;
-      padding-left: 1.2rem;
     }
   }
 
   &__senha {
+    padding-right: 2.25rem;
+
+    &-div {
+      margin-bottom: 1rem;
+    }
     &-content {
       position: relative;
     }
@@ -64,8 +73,119 @@
     }
   }
 
-  &__checkbox {
+  /* checkbox settings 👇 */
+
+  &__check {
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    label {
+      @include type('text-regular');
+      font-size: 0.875rem;
+      color: white;
+    }
+  }
+
+  //CHECKBOX STYLE
+
+  .form-login__check-input {
+    /* checkbox */
+    --checkbox-diameter: 15px;
+    --checkbox-border-radius: 3px;
+    --checkbox-border-color: #d9d9d9;
+    --checkbox-border-width: 1px;
+    --checkbox-border-style: solid;
+    --checkmark-size: 1;
+  }
+
+  .form-login__check-input,
+  .form-login__check-input *,
+  .form-login__check-input *::before,
+  .form-login__check-input *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .form-login__check-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: var(--checkbox-diameter);
+    height: var(--checkbox-diameter);
+    border-radius: var(--checkbox-border-radius);
+    background: $white;
+    border: var(--checkbox-border-width) var(--checkbox-border-style)
+      var(--checkbox-border-color);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .form-login__check-input::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) $white;
+    box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) $white;
+    border-radius: inherit;
+    opacity: 0;
+    -webkit-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+    -o-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+    transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+  }
+
+  .form-login__check-input::before {
+    top: 40%;
+    left: 50%;
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 7px;
+    border-right: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    -ms-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    opacity: 0;
+    -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),
+      opacity 0.1s;
+    -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+    transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+  }
+
+  /* actions */
+
+  .form-login__check-input:hover {
+    border-color: $white;
+  }
+
+  .form-login__check-input:checked {
+    background: $white;
+    border-color: transparent;
+  }
+
+  .form-login__check-input:checked::before {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg)
+      scale(var(--checkmark-size));
+    -ms-transform: translate(-50%, -50%) rotate(45deg)
+      scale(var(--checkmark-size));
+    transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+    -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    -o-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+  }
+
+  .form-login__check-input:active:not(:checked)::after {
+    -webkit-transition: none;
+    -o-transition: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    transition: none;
+    opacity: 1;
   }
 }
