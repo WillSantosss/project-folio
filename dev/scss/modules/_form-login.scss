@@ -73,7 +73,17 @@
     }
   }
 
-  /* checkbox settings 👇 */
+  &__check-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    a {
+      font-size: 0.875rem;
+      color: $white;
+    }
+  }
 
   &__check {
     display: flex;
