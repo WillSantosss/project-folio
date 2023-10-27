@@ -50,11 +50,19 @@
       font-weight: 500;
       background: $primary;
       &::before {
-        content: ' ';
+        content: '';
         display: inline-block;
         width: 26px;
         height: 26px;
         background-image: url('../../../assets/images/icon-google.svg');
+      }
+
+      &::after {
+        content: 'Continuar com o Google';
+        display: inline-block;
+        @include d(s) {
+          content: none;
+        }
       }
 
       &:hover {
@@ -76,6 +84,13 @@
           width: 26px;
           height: 26px;
           background-image: url('../../../assets/images/icon-linkedin.svg');
+        }
+        &::after {
+          content: 'Continuar com o Linkedin';
+          display: inline-block;
+          @include d(s) {
+            content: none;
+          }
         }
       }
     }
