@@ -38,6 +38,13 @@
         color: $secondary-light;
       }
     }
+    &--active {
+      button {
+        background: $white;
+        color: $secondary-light;
+        cursor: auto;
+      }
+    }
   }
 
   &--icon {
