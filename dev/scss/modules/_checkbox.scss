@@ -1,44 +1,29 @@
-.form-login {
+.check {
   $self: #{&};
-
-  &__check-form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.8rem;
-    a {
-      font-size: 0.875rem;
-      color: $white;
-    }
-  }
-
-  &__check {
-    display: flex;
-    align-items: center;
-    label {
-      @include type('text-regular');
-      font-size: 0.875rem;
-      color: white;
-    }
+  display: flex;
+  align-items: center;
+  label {
+    @include type('text-regular');
+    font-size: 0.875rem;
+    color: white;
   }
 
   //CHECKBOX STYLE
 
-  &__check-input {
+  &__input {
     /* checkbox */
     --checkmark-size: 1;
   }
 
-  &__check-input,
-  &__check-input *,
-  &__check-input *::before,
-  &__check-input *::after {
+  &__input,
+  &__input *,
+  &__input *::before,
+  &__input *::after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
-  &__check-input {
+  &__input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -54,7 +39,7 @@
     position: relative;
   }
 
-  &__check-input::after {
+  &__input::after {
     content: '';
     position: absolute;
     top: 0;
@@ -70,7 +55,7 @@
     transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
   }
 
-  &__check-input::before {
+  &__input::before {
     top: 40%;
     left: 50%;
     content: '';
@@ -91,16 +76,16 @@
 
   /* actions */
 
-  &__check-input:hover {
+  &__input:hover {
     border-color: $white;
   }
 
-  &__check-input:checked {
+  &__input:checked {
     background: $white;
     border-color: transparent;
   }
 
-  &__check-input:checked::before {
+  &__input:checked::before {
     opacity: 1;
     transform: translate(-50%, -50%) rotate(45deg) scale(0.7);
     -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
@@ -108,7 +93,7 @@
     transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
   }
 
-  &__check-input:active:not(:checked)::after {
+  &__input:active:not(:checked)::after {
     -webkit-transition: none;
     -o-transition: none;
     -webkit-box-shadow: none;
