@@ -1,0 +1,119 @@
+.form-login {
+  $self: #{&};
+
+  &__check-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    a {
+      font-size: 0.875rem;
+      color: $white;
+    }
+  }
+
+  &__check {
+    display: flex;
+    align-items: center;
+    label {
+      @include type('text-regular');
+      font-size: 0.875rem;
+      color: white;
+    }
+  }
+
+  //CHECKBOX STYLE
+
+  &__check-input {
+    /* checkbox */
+    --checkmark-size: 1;
+  }
+
+  &__check-input,
+  &__check-input *,
+  &__check-input *::before,
+  &__check-input *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  &__check-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 3px;
+    background: $white;
+    border: 1px solid $white;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__check-input::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-shadow: 0 0 0 calc(1rem / 2.5) $white;
+    box-shadow: 0 0 0 calc(1rem / 2.5) $white;
+    border-radius: inherit;
+    opacity: 0;
+    -webkit-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+    -o-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+    transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+  }
+
+  &__check-input::before {
+    top: 40%;
+    left: 50%;
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 7px;
+    border-right: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    -ms-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    opacity: 0;
+    -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),
+      opacity 0.1s;
+    -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+    transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6), opacity 0.1s;
+  }
+
+  /* actions */
+
+  &__check-input:hover {
+    border-color: $white;
+  }
+
+  &__check-input:checked {
+    background: $white;
+    border-color: transparent;
+  }
+
+  &__check-input:checked::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(45deg) scale(0.7);
+    -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    -o-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+  }
+
+  &__check-input:active:not(:checked)::after {
+    -webkit-transition: none;
+    -o-transition: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    transition: none;
+    opacity: 1;
+  }
+}

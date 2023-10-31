@@ -43,6 +43,9 @@
         background: $white;
         color: $secondary-light;
         cursor: auto;
+        @include d(s) {
+          display: none !important;
+        }
       }
     }
   }
@@ -56,6 +59,10 @@
       gap: 10px;
       font-weight: 500;
       background: $primary;
+      @include d(s) {
+        background: $secondary-light;
+      }
+
       &::before {
         content: '';
         display: inline-block;
