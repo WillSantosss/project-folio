@@ -23,36 +23,6 @@
     }
   }
 
-  &__nav-button {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-    gap: 1.5rem;
-    padding-right: 10rem;
-    padding-top: 2.69rem;
-    @include d(m) {
-      padding-right: 5rem;
-    }
-    @include d(s) {
-      gap: 0.88rem;
-      padding-right: 1.5rem;
-      padding-top: 1.5rem;
-      padding-bottom: 2.69rem;
-    }
-
-    button {
-      @include d(s) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 5.9375rem;
-        height: 2.1875rem;
-        padding: 0.75rem 1rem;
-      }
-    }
-  }
-
   &__content {
     width: 100%;
     display: flex;
@@ -82,7 +52,7 @@
       gap: 0.62rem;
     }
     h1 {
-      @include type("title-l");
+      @include type('title-l');
       color: $white;
       line-height: normal;
       text-align: center;
@@ -93,7 +63,7 @@
     }
 
     h2 {
-      @include type("title-md");
+      @include type('title-md');
       font-weight: 300;
       color: $white;
       line-height: normal;
@@ -116,7 +86,7 @@
       button {
         width: 17.3125rem;
         height: 3.5rem;
-        @include type("title-md");
+        @include type('title-md');
 
         @include d(s) {
           font-size: 1rem;
@@ -177,7 +147,7 @@
 
     h2 {
       width: 46%;
-      @include type("title-l");
+      @include type('title-l');
       color: $secondary;
       line-height: normal;
       @include d(s) {
@@ -198,7 +168,7 @@
       }
       p {
         width: 25.375rem;
-        @include type("title-md");
+        @include type('title-md');
         font-weight: 300;
         color: $white;
         line-height: normal;
@@ -244,14 +214,14 @@
     grid-auto-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row dense;
-    grid-template-areas: "content-text content-photo";
+    grid-template-areas: 'content-text content-photo';
     @include d(m) {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
       grid-auto-rows: auto;
       grid-template-areas:
-        "content-photo"
-        "content-text";
+        'content-photo'
+        'content-text';
       margin-bottom: 1.5rem;
     }
     @include d(s) {
@@ -259,8 +229,8 @@
       grid-template-rows: 1fr;
       grid-auto-rows: auto;
       grid-template-areas:
-        "content-photo"
-        "content-text";
+        'content-photo'
+        'content-text';
       margin-bottom: 1.5rem;
     }
   }
@@ -279,7 +249,7 @@
       margin-top: 1rem;
     }
     h2 {
-      @include type("title-l");
+      @include type('title-l');
       font-size: 3.5rem;
       color: $secondary;
       line-height: normal;
@@ -290,7 +260,7 @@
     }
 
     p {
-      @include type("title-md");
+      @include type('title-md');
       line-height: normal;
       color: $secondary;
       padding-bottom: 2rem;
@@ -314,7 +284,7 @@
       }
 
       li {
-        @include type("title-md");
+        @include type('title-md');
         line-height: normal;
         color: $secondary;
         font-weight: 400;
@@ -323,8 +293,8 @@
         }
         &::before {
           counter-increment: section;
-          content: counter(section) ". ";
-          @include type("title-md");
+          content: counter(section) '. ';
+          @include type('title-md');
           color: $secondary;
           font-weight: 400;
           line-height: normal;
@@ -334,7 +304,7 @@
         }
 
         span {
-          @include type("title-md");
+          @include type('title-md');
           font-weight: 600;
           color: $secondary;
           line-height: normal;
@@ -356,7 +326,7 @@
     a {
       display: flex;
       align-items: center;
-      @include type("title-md");
+      @include type('title-md');
       color: $secondary;
       font-weight: 700;
       cursor: pointer;
@@ -369,7 +339,7 @@
       &:hover {
         color: $primary;
         &::after {
-          content: "";
+          content: '';
           display: inline-block;
           background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M7.5 15L15 7.5L7.5 0L4.875 2.625L7.875 5.625H0V9.375H7.875L4.875 12.375L7.5 15Z" fill="%236B51BD"/></svg>');
           margin-left: 8px;
@@ -383,7 +353,7 @@
         }
       }
       &::after {
-        content: "";
+        content: '';
         display: inline-block;
         width: 15px;
         height: 15px;

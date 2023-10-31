@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  padding-right: 10rem;
+  padding-top: 2.69rem;
+  @include d(m) {
+    padding-right: 5rem;
+  }
+  @include d(s) {
+    gap: 0.88rem;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2.69rem;
+  }
+
+  button {
+    @include d(s) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 5.9375rem;
+      height: 2.1875rem;
+      padding: 0.75rem 1rem;
+    }
+  }
+}
