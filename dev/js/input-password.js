@@ -7,7 +7,7 @@ export default function inputPassword() {
     passwordToggle.addEventListener('click', function () {
       isPasswordVisible = !isPasswordVisible;
       passwordField.type = isPasswordVisible ? 'text' : 'password';
-      passwordToggle.src = isPasswordVisible ? '../../assets/images/icon-olho.svg' : '../../assets/images/icon-olhoAberto.svg';
+      passwordToggle.src = isPasswordVisible ? './assets/images/icon-olho.svg' : './assets/images/icon-olhoAberto.svg';
     });
   });
 }
