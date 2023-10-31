@@ -3,10 +3,37 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  @include d(s) {
+    justify-content: space-around;
+  }
+
+  //Link main Style {
+  .link {
+    @include d(s) {
+      font-size: 0.875rem;
+    }
+  }
+
+  //div Link
+  &__link {
+    @include d(s) {
+      display: none;
+    }
+  }
+
+  &-links {
+    @include d(s) {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
 
   &__text {
     @include type('text-regular');
     font-size: 0.75rem;
     color: $white;
+    @include d(s) {
+      display: none;
+    }
   }
 }
