@@ -1,0 +1,14 @@
+.recup-text {
+  h1 {
+    padding-bottom: 0.5rem;
+  }
+  p {
+    @include type('text-regular');
+    color: $white;
+    font-size: 1.125rem;
+    margin-bottom: 1.62rem;
+    @include d(s) {
+      font-size: 0.875rem;
+    }
+  }
+}

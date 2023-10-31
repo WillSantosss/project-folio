@@ -48,6 +48,31 @@
         }
       }
     }
+
+    &--icon {
+      button {
+        display: flex;
+        align-items: flex-end;
+        gap: 0.62rem;
+        padding-left: 0;
+        margin-top: 0.32rem;
+
+        font-size: 1.125rem;
+        font-weight: 400;
+        &:hover {
+          background: transparent;
+          color: white;
+        }
+
+        &::before {
+          content: '';
+          display: inline-block;
+          background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none"><path d="M20.4853 13.0001H3.51472" stroke="%23FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.4091 19.8945L3.51477 13.0002L10.4091 6.10595" stroke="%23FCFCFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
   }
 
   &--icon {
