@@ -12,6 +12,10 @@
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="393" height="827" viewBox="0 0 393 827" fill="none"><path d="M0 0.5V826.065C40.2552 798.227 89.5167 769.844 173.575 789.903C257.633 809.963 291.066 803.003 313.854 792.632C332.085 784.336 374.214 759.7 393 748.42V0.5H0Z" fill="url(%23paint0_linear_1086_3013)"/><defs><linearGradient id="paint0_linear_1086_3013" x1="495" y1="106" x2="8.87033" y2="820.061" gradientUnits="userSpaceOnUse"><stop stop-color="%23CEC5E8"/><stop offset="0.484375" stop-color="%239C6DEF"/><stop offset="0.692708" stop-color="%23845FD6"/><stop offset="0.864583" stop-color="%236B51BD"/><stop offset="1" stop-color="%236B51BD"/></linearGradient></defs></svg>');
   }
 
+  @media screen and (max-height: 531px) {
+    height: 100vw;
+  }
+
   footer {
     width: 100%;
     display: flex;
