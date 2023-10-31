@@ -83,7 +83,7 @@
     //Focus
 
     &:focus {
-      outline: 2px solid $primary;
+      outline: 2px solid $primary-opacity;
       background: $primary;
       color: $white;
       @include type('text-regular');
@@ -161,6 +161,10 @@
       a {
         font-family: $mainfont;
         font-size: 1rem;
+        @include d(s) {
+          font-weight: 700;
+          text-decoration: none;
+        }
       }
     }
   }
