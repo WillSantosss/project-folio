@@ -49,7 +49,7 @@ body {
 @import './modules/paragraph-link';
 @import './modules/link';
 @import './modules/footer-login';
-@import './modules/form-login';
+
 @import './modules/tooltip';
 @import './modules/checkbox';
 @import './modules/nav';
@@ -58,4 +58,6 @@ body {
 
 //Pages
 @import './modules/page-home';
+@import './modules/form-login';
 @import './modules/footer';
+@import './modules/loader';
