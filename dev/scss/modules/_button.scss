@@ -24,9 +24,21 @@
       font-size: 1rem;
       padding: 0.75rem 1rem;
     }
+
     &:hover {
       background: $primary;
       color: $white;
+    }
+  }
+
+  &--active {
+    button {
+      background: $primary;
+      color: $white;
+      cursor: auto;
+      @include d(s) {
+        display: none !important;
+      }
     }
   }
 
@@ -38,6 +50,7 @@
         color: $secondary-light;
       }
     }
+
     &--active {
       button {
         background: $white;
@@ -45,6 +58,19 @@
         cursor: auto;
         @include d(s) {
           display: none !important;
+        }
+      }
+    }
+
+    &--mobile {
+      button {
+        @include d(s) {
+          background: $secondary-light;
+          color: white;
+          &:hover {
+            background: $primary;
+            color: white;
+          }
         }
       }
     }

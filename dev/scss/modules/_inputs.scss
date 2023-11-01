@@ -1,3 +1,4 @@
+.input,
 .input-email,
 .input-password {
   width: 89%;
@@ -29,6 +30,13 @@
     font-weight: 500;
     color: $primary;
   }
+}
+
+//Input
+
+.input {
+  margin-bottom: 1rem;
+  padding-right: 2.25rem;
 }
 
 //Input Email

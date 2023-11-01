@@ -10,11 +10,11 @@
         <div class="button button--transparent ">
           <button onclick="window.location.href = './index.html'">Home</button>
         </div>
-        <div class="button button--transparent button--transparent--active tooltip ">
-          <button>Login <span class="tooltiptext">Você já está na página de login.</span></button>
+        <div class="button button--transparent button--transparent--mobile">
+          <button onclick="window.location.href = './login.html'">Login </button>
         </div>
-        <div class="button page-home__nav-sing">
-          <button onclick="window.location.href = './singup.html'">Sign Up</button>
+        <div class="button button--active page-home__nav-sing tooltip">
+          <button>Sign Up <span class="tooltiptext">Você já está na página de cadastro.</span></button>
         </div>
       </div>
     </nav>
@@ -22,11 +22,16 @@
     <section class="section-formLogin">
       <div class="section-formLogin__form">
         <div>
-          <h1 class="formTitle">Olá, <br /> prazer ver você novamente por aqui!</h1>
+          <h1 class="formTitle">Não possui uma conta? Cadastre-se!</h1>
         </div>
 
 
+
+
         <form class="form-login">
+          <label for="name"></label>
+          <input class="input" placeholder="Nome" type="text" required> </input>
+
           <label for="email"></label>
           <input class="input-email" placeholder="E-mail" type="email" required> </input>
 
@@ -38,22 +43,23 @@
             </div>
           </div>
 
-          <div class="form-login__check-form">
-            <div class="check">
-              <input class="check__input" type="checkbox" />
-              <label for="check-form">Lembre-se de mim</label>
+          <div class="input-password__div">
+            <label for="senha"></label>
+            <div class="input-password__content">
+              <input class="input-password" placeholder="Digite sua senha novamente" type="password" id="senha" required>
+              <img src="./assets/images/icon-olho.svg" alt="Ícone do Olho" id="togglePassword" class="input-password__icon">
             </div>
-            <a href="./recup.html" class=" link form-login__check-input-link">Esqueceu a senha?</a>
           </div>
 
+
           <div class="button">
-            <button>Login</button>
+            <button>Cadastrar</button>
           </div>
         </form>
 
 
         <div class="form-login__mobile-textLogin">
-          <span>Ou faça login com:</span>
+          <span>Ou cadastre-se com:</span>
         </div>
 
         <div class="form-login__button-login">
@@ -67,7 +73,7 @@
 
 
         <div class="form-login__cadastro">
-          <span>Não tem uma conta? <a href="" class="link">Cadastre-se</a></span>
+          <span>Já possui uma conta? <a href="./login.html" class="link">Faça Login</a></span>
         </div>
 
       </div>
