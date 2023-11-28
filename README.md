@@ -1,3 +1,2 @@
-# project-Foliobox
+# project-folio
 
-## Esse projeto está sendo desenvolvido para exemplo ao desenvolvedores da equipe Foliobox.
